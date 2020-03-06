@@ -9,10 +9,10 @@ class WeightedSumOfErrors(RewardFunction):
     """
     Reward Function that calculates the reward as the weighted sum of errors with a certain power.
 
-    .. math:
-        `reward = - reward_weights * (abs(state - reference)/ state_length) ** reward_power `
-    .. math:
-        ` limit\_violation\_reward = -1 / (1 - \gamma)`
+    .. math::
+        reward = - reward_weights * (abs(state - reference)/ state_length) ** reward_power
+    .. math::
+        limit\_violation\_reward = -1 / (1 - \gamma)
 
     | state_length[i] = 1 for states with positive values only.
     | state_length[i] = 2 for states with positive and negative values.
